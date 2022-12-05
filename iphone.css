@@ -1,0 +1,73 @@
+*{margin:0%; padding: 0%;}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+}.container{
+    background: black;
+   min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.container ul li{
+    display: inline-flex;
+}.container ul li a{
+    text-decoration: none;
+    color: wheat;
+}nav{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin: auto;
+    padding: 20px 0px;
+    width: 80%;
+}nav ul li{
+    padding: 17px 4px;
+}nav a img{
+  width: 50px;
+}nav ul li a:hover{
+color: red;
+}.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    width: 80%;
+}.content .text{
+    width: 40%;
+}
+.content h2{
+    color: wheat;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}.content p{
+    color: wheat;
+    font-size: 18px;
+    letter-spacing: 1px;
+}.content img{
+    width: 200px;
+    padding: 0px 150px;
+    
+}.button{
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    padding: 8px 15px;
+    font-size: 13px;
+}.content a:hover{
+color:red;
+font-size: 14px;
+}.icons{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%); /* this function to fix the case of position in center */
+}.icons img{
+    width: 40px;
+    transition: 0.5s;   /* this function to slow down the motion */
+   
+}.icons img:hover{
+    transform: scale(1.2);            /* this function to make afont size largest but in img */                 
+    cursor: grab;
+}
